@@ -693,7 +693,7 @@ function gradient_texture(top_color, bottom_color) {
         data[i] = bottom_color[i];
 	data[4 + i] = top_color[i];
     }
-    data[3] = data[7] = 1.0; // Alpha = 1.0
+    data[3] = data[7] = 255; // Alpha = 1.0
 
     var texture = new THREE.DataTexture(data, width, height, THREE.RGBAFormat);
     texture.magFilter = THREE.LinearFilter;
